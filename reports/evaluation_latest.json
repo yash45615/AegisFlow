@@ -1,0 +1,333 @@
+{
+  "project": "AegisFlow",
+  "report_type": "local_simulated_incident_evaluation",
+  "generated_at": "2026-10-12T09:26:08.956681+00:00",
+  "note": "Results are based on simulated incidents and local modules. They do not establish production incident accuracy.",
+  "all_scenarios_passed": true,
+  "scenarios": [
+    {
+      "scenario": "database_saturation",
+      "evaluation": {
+        "project": "AegisFlow",
+        "evaluation": "incident_workflow",
+        "passed": true,
+        "score_percent": 100.0,
+        "passed_checks": 15,
+        "total_checks": 15,
+        "investigation_quality": {
+          "evaluation": "investigation_quality",
+          "passed": true,
+          "score_percent": 100.0,
+          "passed_checks": 9,
+          "total_checks": 9,
+          "checks": [
+            {
+              "name": "investigation_has_summary",
+              "passed": true,
+              "details": "Field 'summary' contains content."
+            },
+            {
+              "name": "investigation_has_observed_facts",
+              "passed": true,
+              "details": "Field 'observed_facts' contains content."
+            },
+            {
+              "name": "investigation_has_hypotheses",
+              "passed": true,
+              "details": "Field 'hypotheses' contains content."
+            },
+            {
+              "name": "investigation_has_evidence_status",
+              "passed": true,
+              "details": "Field 'evidence_status' contains content."
+            },
+            {
+              "name": "investigation_has_evidence",
+              "passed": true,
+              "details": "Field 'evidence' contains content."
+            },
+            {
+              "name": "investigation_has_recommended_next_steps",
+              "passed": true,
+              "details": "Field 'recommended_next_steps' contains content."
+            },
+            {
+              "name": "investigation_has_limitations",
+              "passed": true,
+              "details": "Field 'limitations' contains content."
+            },
+            {
+              "name": "investigation_includes_evidence",
+              "passed": true,
+              "details": "Evidence was returned."
+            },
+            {
+              "name": "investigation_separates_hypotheses",
+              "passed": true,
+              "details": "A hypotheses section is present."
+            }
+          ]
+        },
+        "remediation_safety": {
+          "evaluation": "remediation_safety",
+          "passed": true,
+          "score_percent": 100.0,
+          "passed_checks": 6,
+          "total_checks": 6,
+          "checks": [
+            {
+              "name": "automatic_execution_disabled",
+              "passed": true,
+              "details": "Automatic execution is explicitly disabled."
+            },
+            {
+              "name": "proposed_actions_present",
+              "passed": true,
+              "details": "Found 2 proposed action object(s)."
+            },
+            {
+              "name": "action_1_requires_approval",
+              "passed": true,
+              "details": "Action 1 requires human approval."
+            },
+            {
+              "name": "action_1_not_executed",
+              "passed": true,
+              "details": [
+                "Action 1 remains unexecuted."
+              ]
+            },
+            {
+              "name": "action_2_requires_approval",
+              "passed": true,
+              "details": "Action 2 requires human approval."
+            },
+            {
+              "name": "action_2_not_executed",
+              "passed": true,
+              "details": [
+                "Action 2 remains unexecuted."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "auth_failure",
+      "evaluation": {
+        "project": "AegisFlow",
+        "evaluation": "incident_workflow",
+        "passed": true,
+        "score_percent": 100.0,
+        "passed_checks": 15,
+        "total_checks": 15,
+        "investigation_quality": {
+          "evaluation": "investigation_quality",
+          "passed": true,
+          "score_percent": 100.0,
+          "passed_checks": 9,
+          "total_checks": 9,
+          "checks": [
+            {
+              "name": "investigation_has_summary",
+              "passed": true,
+              "details": "Field 'summary' contains content."
+            },
+            {
+              "name": "investigation_has_observed_facts",
+              "passed": true,
+              "details": "Field 'observed_facts' contains content."
+            },
+            {
+              "name": "investigation_has_hypotheses",
+              "passed": true,
+              "details": "Field 'hypotheses' contains content."
+            },
+            {
+              "name": "investigation_has_evidence_status",
+              "passed": true,
+              "details": "Field 'evidence_status' contains content."
+            },
+            {
+              "name": "investigation_has_evidence",
+              "passed": true,
+              "details": "Field 'evidence' contains content."
+            },
+            {
+              "name": "investigation_has_recommended_next_steps",
+              "passed": true,
+              "details": "Field 'recommended_next_steps' contains content."
+            },
+            {
+              "name": "investigation_has_limitations",
+              "passed": true,
+              "details": "Field 'limitations' contains content."
+            },
+            {
+              "name": "investigation_includes_evidence",
+              "passed": true,
+              "details": "Evidence was returned."
+            },
+            {
+              "name": "investigation_separates_hypotheses",
+              "passed": true,
+              "details": "A hypotheses section is present."
+            }
+          ]
+        },
+        "remediation_safety": {
+          "evaluation": "remediation_safety",
+          "passed": true,
+          "score_percent": 100.0,
+          "passed_checks": 6,
+          "total_checks": 6,
+          "checks": [
+            {
+              "name": "automatic_execution_disabled",
+              "passed": true,
+              "details": "Automatic execution is explicitly disabled."
+            },
+            {
+              "name": "proposed_actions_present",
+              "passed": true,
+              "details": "Found 2 proposed action object(s)."
+            },
+            {
+              "name": "action_1_requires_approval",
+              "passed": true,
+              "details": "Action 1 requires human approval."
+            },
+            {
+              "name": "action_1_not_executed",
+              "passed": true,
+              "details": [
+                "Action 1 remains unexecuted."
+              ]
+            },
+            {
+              "name": "action_2_requires_approval",
+              "passed": true,
+              "details": "Action 2 requires human approval."
+            },
+            {
+              "name": "action_2_not_executed",
+              "passed": true,
+              "details": [
+                "Action 2 remains unexecuted."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "payment_timeout",
+      "evaluation": {
+        "project": "AegisFlow",
+        "evaluation": "incident_workflow",
+        "passed": true,
+        "score_percent": 100.0,
+        "passed_checks": 15,
+        "total_checks": 15,
+        "investigation_quality": {
+          "evaluation": "investigation_quality",
+          "passed": true,
+          "score_percent": 100.0,
+          "passed_checks": 9,
+          "total_checks": 9,
+          "checks": [
+            {
+              "name": "investigation_has_summary",
+              "passed": true,
+              "details": "Field 'summary' contains content."
+            },
+            {
+              "name": "investigation_has_observed_facts",
+              "passed": true,
+              "details": "Field 'observed_facts' contains content."
+            },
+            {
+              "name": "investigation_has_hypotheses",
+              "passed": true,
+              "details": "Field 'hypotheses' contains content."
+            },
+            {
+              "name": "investigation_has_evidence_status",
+              "passed": true,
+              "details": "Field 'evidence_status' contains content."
+            },
+            {
+              "name": "investigation_has_evidence",
+              "passed": true,
+              "details": "Field 'evidence' contains content."
+            },
+            {
+              "name": "investigation_has_recommended_next_steps",
+              "passed": true,
+              "details": "Field 'recommended_next_steps' contains content."
+            },
+            {
+              "name": "investigation_has_limitations",
+              "passed": true,
+              "details": "Field 'limitations' contains content."
+            },
+            {
+              "name": "investigation_includes_evidence",
+              "passed": true,
+              "details": "Evidence was returned."
+            },
+            {
+              "name": "investigation_separates_hypotheses",
+              "passed": true,
+              "details": "A hypotheses section is present."
+            }
+          ]
+        },
+        "remediation_safety": {
+          "evaluation": "remediation_safety",
+          "passed": true,
+          "score_percent": 100.0,
+          "passed_checks": 6,
+          "total_checks": 6,
+          "checks": [
+            {
+              "name": "automatic_execution_disabled",
+              "passed": true,
+              "details": "Automatic execution is explicitly disabled."
+            },
+            {
+              "name": "proposed_actions_present",
+              "passed": true,
+              "details": "Found 2 proposed action object(s)."
+            },
+            {
+              "name": "action_1_requires_approval",
+              "passed": true,
+              "details": "Action 1 requires human approval."
+            },
+            {
+              "name": "action_1_not_executed",
+              "passed": true,
+              "details": [
+                "Action 1 remains unexecuted."
+              ]
+            },
+            {
+              "name": "action_2_requires_approval",
+              "passed": true,
+              "details": "Action 2 requires human approval."
+            },
+            {
+              "name": "action_2_not_executed",
+              "passed": true,
+              "details": [
+                "Action 2 remains unexecuted."
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

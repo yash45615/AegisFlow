@@ -1,0 +1,64 @@
+{
+  "evaluation": "retrieval_quality",
+  "k": 3,
+  "case_count": 3,
+  "mean_precision_at_k": 0.3889,
+  "mean_recall_at_k": 1.0,
+  "mean_reciprocal_rank": 1.0,
+  "cases": [
+    {
+      "query": "database connection pool saturation and timeout errors",
+      "expected_documents": [
+        "database-connection-pool.md"
+      ],
+      "retrieved_count": 3,
+      "k": 3,
+      "precision_at_k": 0.3333,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "expected_document_found": true,
+      "retrieved_sources": [
+        "data/runbooks/database-connection-pool.md database-connection-pool # runbook: database connection pool saturation\n\n## symptoms\n- checkout p95 latency rises above its normal baseline.\n- database connection acquisition timeouts appear in logs",
+        "data/historical_incidents/inc-2026-0042.md inc-2026-0042 # historical incident: inc-2026-0042\n\n## summary\ncheckout latency increased due to database connection pool saturation.\n\n## observed evidence\n- active database connections reached the",
+        "data/runbooks/payment-provider-timeouts.md payment-provider-timeouts # runbook: payment provider timeouts\n\n## symptoms\n- payment request latency exceeds its normal baseline.\n- external provider calls time out.\n- checkout errors increase whi"
+      ]
+    },
+    {
+      "query": "authentication failures and users unable to log in",
+      "expected_documents": [
+        "authentication-failures.md"
+      ],
+      "retrieved_count": 2,
+      "k": 3,
+      "precision_at_k": 0.5,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "expected_document_found": true,
+      "retrieved_sources": [
+        "data/runbooks/authentication-failures.md authentication-failures # runbook: elevated authentication failures\n\n## symptoms\n- authentication error rate rises above its alert threshold.\n- token validation dependency returns http 5xx responses.",
+        "data/historical_incidents/inc-2026-0051.md inc-2026-0051 # historical incident: inc-2026-0051\n\n## summary\nauthentication failures increased after the token validation\ndependency began returning http 503 responses.\n\n## observed evidence\n- au"
+      ]
+    },
+    {
+      "query": "payment provider timeout and slow payment responses",
+      "expected_documents": [
+        "payment-provider-timeouts.md"
+      ],
+      "retrieved_count": 4,
+      "k": 3,
+      "precision_at_k": 0.3333,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "expected_document_found": true,
+      "retrieved_sources": [
+        "data/runbooks/payment-provider-timeouts.md payment-provider-timeouts # runbook: payment provider timeouts\n\n## symptoms\n- payment request latency exceeds its normal baseline.\n- external provider calls time out.\n- checkout errors increase whi",
+        "data/historical_incidents/inc-2026-0051.md inc-2026-0051 # historical incident: inc-2026-0051\n\n## summary\nauthentication failures increased after the token validation\ndependency began returning http 503 responses.\n\n## observed evidence\n- au",
+        "data/runbooks/authentication-failures.md authentication-failures # runbook: elevated authentication failures\n\n## symptoms\n- authentication error rate rises above its alert threshold.\n- token validation dependency returns http 5xx responses."
+      ]
+    }
+  ],
+  "project": "AegisFlow",
+  "report_type": "local_retrieval_evaluation",
+  "generated_at": "2026-10-12T09:31:09.273426+00:00",
+  "note": "Initial labeled evaluation set. Scores measure filename-based retrieval against expected documents, not factual correctness. Confirm expected labels against the source documents."
+}

@@ -1,0 +1,38 @@
+@'
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+service-account*.json
+
+# Databases and runtime data
+*.db
+*.sqlite
+*.sqlite3
+data/
+logs/
+*.log
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Encoding utf8 .gitignore
